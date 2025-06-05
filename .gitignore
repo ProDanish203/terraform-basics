@@ -1,0 +1,69 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Terraform crash log
+crash.log
+
+# Terraform variable override files (may contain secrets)
+# *.tfvars
+*.tfvars.json
+
+# Terraform plan files
+*.tfplan
+
+# .terraform directory (contains cached provider plugins, modules, etc.)
+*.terraform/
+*.terraform.lock.hcl
+
+# Sensitive files (e.g., environment-specific secrets)
+.env
+*.pem
+*.key
+*.pub
+*.cer
+*.crt
+*.csv
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+*node_modules
+config/config.env
+/.idea
