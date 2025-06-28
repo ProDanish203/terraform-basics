@@ -26,4 +26,6 @@ resource "aws_instance" "dev_instance" {
   tags = {
     Name = "dev-instance"
   }
+
+  user_data = file("userdata.sh")
 }
